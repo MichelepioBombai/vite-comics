@@ -1,6 +1,4 @@
-<script setup>
-import { ref } from "vue";
-</script>
+<script></script>
 
 <template>
   <header>
@@ -16,6 +14,6 @@ import { ref } from "vue";
 <style scoped>
 .bg-black {
   background-color: black;
-  height: 100px;
+  height: 50px;
 }
 </style>
