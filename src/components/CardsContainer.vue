@@ -1,15 +1,19 @@
 <script>
 export default {
   props: {
-    thumb: string,
-    series: string,
+    img: String,
+    title: String,
   },
 };
 </script>
 
 <template>
-  <div>
-    <img :src="thumb" alt="" />
-    <h2>{{ series }}</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-2">
+        <img :src="img" alt="" />
+        <h2>{{ title }}</h2>
+      </div>
+    </div>
   </div>
 </template>

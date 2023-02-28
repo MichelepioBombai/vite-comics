@@ -1,5 +1,9 @@
 <script>
+import CardsContainer from "./CardsContainer.vue";
 export default {
+  components: {
+    CardsContainer,
+  },
   data() {
     return {
       comics: [
@@ -96,15 +100,9 @@ export default {
 <template>
   <div class="jumbotron"></div>
   <div class="card-container"></div>
-  <div class="container">
-    <div class="row">
-      <div
-        v-for="comic in series"
-        class="col-2"
-        :img="comic.thumb"
-        :series="comic.series"
-      ></div>
-    </div>
+
+  <div>
+    <slide v-for="comic in comics" :img="comic.thumb" :title="comic.series" />
   </div>
 </template>
 
@@ -116,6 +114,6 @@ export default {
 
 .card-container {
   background-color: hsl(0deg 0% 11%);
-  height: 400px;
+  min-height: 400px;
 }
 </style>

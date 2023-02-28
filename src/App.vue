@@ -13,6 +13,7 @@ export default {
   <AppHeader />
   <MainContent />
   <CardsContainer />
+
   <AppFooter />
 </template>
 
@@ -22,10 +23,6 @@ export default {
   margin: 0;
   padding: 0;
   font-family: "Rubik", sans-serif;
-}
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 a {
