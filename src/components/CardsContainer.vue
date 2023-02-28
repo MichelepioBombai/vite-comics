@@ -8,13 +8,9 @@ export default {
 </script>
 
 <template>
-  <div class="container">
-    <div class="row">
-      <div class="col-2">
-        <img :src="img" alt="" />
-        <h2>{{ title }}</h2>
-      </div>
-    </div>
+  <div class="col-2">
+    <img :src="img" alt="" />
+    <h2>{{ title }}</h2>
   </div>
 </template>
 
@@ -22,5 +18,11 @@ export default {
 img {
   width: 200px;
   height: 200px;
+  margin-top: 30px;
+}
+h2 {
+  color: white;
+  font-size: 18px;
+  margin-top: 15px;
 }
 </style>

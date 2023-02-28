@@ -102,15 +102,11 @@ export default {
   <div class="card-container">
     <div class="container">
       <div class="row">
-        <div class="col-2">
-          <div>
-            <CardsContainer
-              v-for="comic in comics"
-              :img="comic.thumb"
-              :title="comic.series"
-            />
-          </div>
-        </div>
+        <CardsContainer
+          v-for="comic in comics"
+          :img="comic.thumb"
+          :title="comic.series"
+        />
       </div>
     </div>
   </div>

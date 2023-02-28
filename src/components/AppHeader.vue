@@ -23,7 +23,7 @@ export default {
 <template>
   <header>
     <div>
-      <div class="container">
+      <div class="container d-flex justify-content-between pt-3 pb-3">
         <div>
           <img src="../assets/dc-logo.png" alt="" />
         </div>
@@ -44,14 +44,6 @@ export default {
   background-color: black;
   height: 43px;
 }
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-top: 15px;
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 15px;
-}
 
 ul li {
   list-style-type: none;
@@ -62,6 +54,11 @@ ul {
   display: flex;
   gap: 20px;
   padding-top: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 img {

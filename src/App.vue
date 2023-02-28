@@ -24,9 +24,4 @@ export default {
   padding: 0;
   font-family: "Rubik", sans-serif;
 }
-
-a {
-  text-decoration: none;
-  color: black;
-}
 </style>
